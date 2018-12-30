@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Web Components</title>
     <style>
-    div {
+      div {
         border: 2px solid orange;
-    }
-    sl-tooltip #shadow-root span { background-color: red; }
+      }
     </style>
     <script src="tooltip.js"></script>
+    <script src="confirm-link.js"></script>
   </head>
+
   <body>
     <p>
       <sl-tooltip text="Web Components are a set of standards">
@@ -23,5 +24,7 @@
 
     <p><sl-tooltip>No tooltip here!</sl-tooltip></p>
     <p>This <sl-tooltip text="Tooltip goes here">has</sl-tooltip> a tooltip?</p>
+
+    <a is="sl-confirm" href="http://www.codeability.co.uk">codeability</a>
   </body>
 </html>
